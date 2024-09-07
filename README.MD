@@ -112,6 +112,11 @@ Pass `fileId` as route parameter
     ```shell
     cd dropbox
     ```
+5. **Build application:**
+
+    ```shell
+    docker compose build
+    ```
 
 5. **Run application:**
 
@@ -157,5 +162,5 @@ If you prefer to run the application using Node.js instead of Docker, follow the
 ## Additional Information
 
 1. The maximum file size allowed for uploads is 5 MB.
-2. The cron expression is configurable in the .env file under the CRON_EXPRESSION key. Currently, it's running after every 5 minutes
+2. The cron expression is configurable in the .env file under the CRON_EXPRESSION key. Currently, it's running after every 5th minute
 3. Allowed file extensions are `['.jpg', '.jpeg', '.png', '.gif', '.pdf', '.txt', '.docx', '.mp4', '.mkv', '.mov', '.avi', '.mp3', '.xlsx', '.ppt', '.pptx', '.doc', '.odt']`
